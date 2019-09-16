@@ -10,7 +10,7 @@ int main()
 			cin >> a[i][j];
 		}
 	}
-	
+	// 寻找每一行的最大值 
 	for(int i = 0; i < 5; i++){
 		maxa[i] = a[i][0];
 		for(int j = 1; j < 5; j++){
@@ -19,7 +19,7 @@ int main()
 			}
 		}
 	}
-	
+	// 寻找每一列的最小值 
 	for(int j = 0; j < 5; j++){
 		mina[j] = a[0][j];
 		for(int i = 1; i < 5; i++){
@@ -28,7 +28,7 @@ int main()
 			}
 		}
 	}
-
+	// 判定鞍点 
 	bool flag = false;
 	int c, l;
 	for(int i = 0; i < 5; i++){
@@ -48,3 +48,5 @@ int main()
 	}
 	return 0;
 }
+
+
